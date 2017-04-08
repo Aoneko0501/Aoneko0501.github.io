@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=320,user-scalable=no" />
+    <title>冥狼神としてやっていけるか不安になってきた件</title>
+    <link rel="stylesheet" type="text/css" href="anubis.css" />
+</head>
+
+<body>
+    <!-- タイトル画面 -->
+    <div id="title-page" data-role="page">
+        <p>
+            <img src="./src/img/title_01.png" width="40%" />
+        </p>
+        <button id="start_btn">
+          START
+        </button>
+    </div>
+    <!-- ゲーム画面 -->
+    <div id="game-page" data-role="page">
+        <canvas id="map_canvas"></canvas>
+        <p style="height:480px;"></p>
+    </div>
+    <!-- ゲームクリア画面 -->
+    <div id="gameClear-page" data-role="page">
+        <gameclear>
+            GameClear!!!
+        </gameclear>
+        <br/>
+        <button id="restart_btn">
+          GO TITLE
+        </button>
+    </div>
+    <!-- ゲームオーバー画面 -->
+    <div id="gameOver-page" data-role="page">
+        <gameover>
+            GameOver...
+        </gameover>
+        <br/>
+        <button id="restart_btn2">
+          GO TITLE
+        </button>
+    </div>
+    <!-- 遊び方 -->
+    <div id="howTo">
+        <hr /> 〜遊び方〜
+        <br /> アヌビスを操作して，逃げるタマシイを全て捕まえてください．
+        <br />
+        <hr /> +操作方法+
+        <br /> 方向キー or WASDキー：移動<br />
+    </div>
+    <audio id="titleBGM" autoplay loop preload="auto">
+<source src="./src/BGM/title.mp3" />
+    </audio>
+    <button id="onoff" onclick="onoffBGM()">
+      BGM ON
+    </button>
+    <audio id="capture" preload="auto">
+        <source src="./src/BGM/capture.mp3" />
+        <source src="./src/BGM/capture.ogg" />
+    </audio>
+</body>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="./src/js/timer.js" type="text/javascript"></script>
+<script src="./src/js/anubisTask.js" type="text/javascript"></script>
+<script src="./src/js/checkKeyInput.js" type="text/javascript"></script>
+<script src="./src/js/anubis.js" type="text/javascript"></script>
+<script src="./src/js/strings.js" type="text/javascript"></script>
+<script src="./src/js/soul.js" type="text/javascript"></script>
+<script src="./src/js/bgmManager.js" type="text/javascript"></script>
+
+</html>

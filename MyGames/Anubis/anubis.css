@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#start_btn{
+  margin: 0px auto;
+  width: 80%;
+  height: 10%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Impact,Charcoal;
+  background: #FFFE8A;
+  border-radius: 5px;
+  border-bottom: 4px solid orange;
+  color: black;
+}
+
+#restart_btn,#restart_btn2{
+  margin: 0px auto;
+  width: 80%;
+  height: 10%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "ＭＳ 明朝",serif;
+  background: #538AFF;
+  border-radius: 5px;
+  border-bottom: 4px solid #013CBA;
+  color: white;
+}
+
+#onoff {
+    margin: 0px auto;
+    width: 15%;
+    height: 5%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    background: gray;
+    border-radius: 5px;
+    border-bottom: 4px solid #9B9B9B;
+    color: white;
+}
+
+#howTo{
+  font-size: 15px;
+  background-color: black;
+}
+
+gameclear, gameover {
+    font-size: 40px;
+    color: white;
+}
